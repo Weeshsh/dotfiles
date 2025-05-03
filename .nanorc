@@ -2,3 +2,5 @@ set linenumbers
 set tabsize 4
 set mouse
 set autoindent
+include /usr/share/nano/*.nanorc
+include /usr/share/nano-syntax-highlighting/*.nanorc

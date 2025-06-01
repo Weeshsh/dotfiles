@@ -14,6 +14,7 @@
 	undo = reset HEAD~1 --mixed
 	d = !git diff @{u} | diff-so-fancy | less --tabs=4 -RF
 	clear = !git stash && git stash clear
+	p = push
 [color]
 	ui = true
 [color "diff-highlight"]

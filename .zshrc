@@ -179,3 +179,5 @@ alias sem4='cd ~/../../mnt/c/Users/mikow/OneDrive/Pulpit/EVERYTHING/studia/sem4'
 
 # rust bullshit
 . "$HOME/.cargo/env"
+
+. "$HOME/.local/bin/env"

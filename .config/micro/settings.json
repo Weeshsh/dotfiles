@@ -1,0 +1,16 @@
+{
+    "autosu": true,
+    "diffgutter": true,
+    "filemanager-compressparent": true,
+    "filemanager-foldersfirst": true,
+    "filemanager-openonstart": true,
+    "filemanager-showdotfiles": true,
+    "filemanager-showignored": true,
+    "keymenu": true,
+    "mkparents": true,
+    "plugins": [
+        "filemanager"
+    ],
+    "saveundo": true,
+    "softwrap": true
+}

@@ -146,6 +146,10 @@ alias ssh='ssh-add.exe -l > /dev/null || ssh-add.exe && echo -e "\e[92mssh-key(s
 
 # alias
 alias sem4='cd /mnt/c/Users/mikow/Onedrive/Pulpit/EVERYTHING/studia/sem4'
+alias sem5='cd /mnt/c/Users/mikow/Onedrive/Pulpit/EVERYTHING/studia/sem5'
+alias ebiznes='cd && cd BiznesElektroniczny/src/prestashop/themes/mytheme'
+alias cat='bat'
+
 
 # start w git_repositories
 cd ../../mnt/c/Users/mikow/Onedrive/Pulpit/EVERYTHING/studia/sem4
@@ -175,5 +179,7 @@ export INFO_PAGER=less
 export LESS='-R'
 # Remove duplicate entries in PATH
 export PATH=$(echo "$PATH" | awk -v RS=: -v ORS=: '!a[$1]++' | sed 's/:$//')
-sem4
+sem5
 clear
+alias python=/usr/bin/python3
+echo "Paula jest super :)"

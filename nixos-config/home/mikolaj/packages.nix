@@ -18,7 +18,6 @@
     tldr
     diff-so-fancy
 
-    firefox
     vivaldi
     spotify
     vesktop
@@ -27,16 +26,5 @@
     ghostty
 
     texliveFull
-
-    # (texlive.combine {
-    #   inherit (texlive)
-    #     scheme-basic
-    #     collection-langpolish
-    #     collection-latexrecommended
-    #     collection-pictures
-    #     beamer
-    #     collection-latexextra
-    #     ;
-    # })
   ];
 }

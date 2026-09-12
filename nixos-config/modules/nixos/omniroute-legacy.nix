@@ -25,7 +25,7 @@ in
       ExecStart = "${omnirouteBin} serve --no-open";
       Restart = "on-failure";
       RestartSec = "10s";
-      TimeoutStopSec = "45s";
+      TimeoutStopSec = "30s";
     };
   };
 }

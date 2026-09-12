@@ -33,11 +33,10 @@
   boot.kernelParams = [ "i915.enable_guc=3" ];
   environment.sessionVariables.LIBVA_DRIVER_NAME = "iHD";
 
-  # Local swap file for this machine.
   swapDevices = [
     {
       device = "/var/lib/swapfile";
-      size = 16 * 1024;
+      size = 8 * 1024;
     }
   ];
 

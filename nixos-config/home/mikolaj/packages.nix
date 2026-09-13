@@ -19,7 +19,6 @@
     diff-so-fancy
 
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
-    vivaldi
     spotify
     vesktop
     bitwarden-desktop

@@ -19,7 +19,6 @@
   services.nextdns = {
     enable = true;
     arguments = [
-      
       "-profile"
       "f8ce7f"
       

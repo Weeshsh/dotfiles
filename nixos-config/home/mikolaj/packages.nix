@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs,... }:
 
 {
   home.packages = with pkgs; [
@@ -18,6 +18,7 @@
     tldr
     diff-so-fancy
 
+    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     vivaldi
     spotify
     vesktop

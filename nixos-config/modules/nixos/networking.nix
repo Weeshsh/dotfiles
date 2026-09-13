@@ -19,18 +19,22 @@
   services.nextdns = {
     enable = true;
     arguments = [
+      
       "-profile"
       "f8ce7f"
-
+      
       "-cache-size"
       "10MB"
-
-      "-listen"
-      "127.0.0.1:53"
-
-      "-listen"
-      "[::1]:53"
     ];
+  };
+
+  systemd.services.nextdns-activate = {
+    script = ''
+      /run/current-system/sw/bin/nextdns activate
+    '';
+    
+    after = [ "nextdns.service" ];
+    wantedBy = [ "multi-user.target" ];
   };
 
   environment.systemPackages = [ pkgs.nextdns ];

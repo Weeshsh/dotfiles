@@ -37,6 +37,9 @@
       nx-rs = "sudo nixos-rebuild switch --flake ~/nixos-config#nixoson_michael";
       nx-test = "sudo nixos-rebuild test --flake ~/nixos-config#nixoson_michael";
       nx-edit = "code ~/nixos-config";
+      nx-optimise = "sudo nix store optimise";
+      nx-update = "sudo nix flake update --flake ~/nixos-config";
+      nx-refresh = "nx-update && nx-rs && nx-cg && nx-optimise";
     };
 
     history = {

@@ -7,6 +7,7 @@
     ../../modules/nixos/base.nix
     ../../modules/nixos/desktop.nix
     ../../modules/nixos/development.nix
+    ../../modules/nixos/firecrawl.nix
     ../../modules/nixos/networking.nix
     ../../modules/nixos/omniroute-legacy.nix
   ];

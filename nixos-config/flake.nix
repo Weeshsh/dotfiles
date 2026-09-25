@@ -13,14 +13,18 @@
       url = "github:youwen5/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    hermes-agent.url = "github:NousResearch/hermes-agent";
   };
 
   outputs = inputs@{ nixpkgs, home-manager, ... }: {
     nixosConfigurations.nixoson_michael = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
+
       modules = [
         ./hosts/nixoson_michael
-
         home-manager.nixosModules.home-manager
+        
         {
           home-manager = {
             useGlobalPkgs = true;

@@ -5,6 +5,7 @@
     ./packages.nix
     ./git.nix
     ./zsh.nix
+    ./hermes.nix
   ];
 
   home.username = "mikolaj";

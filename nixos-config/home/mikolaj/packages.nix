@@ -11,11 +11,11 @@
     uv
     cpplint
     mariadb
+    nix-sweep
 
     opencode
 
     btop
-    gdu
     tree
     tldr
     diff-so-fancy
@@ -26,6 +26,7 @@
     bitwarden-desktop
     telegram-desktop
     ghostty
+    freetube
 
     texliveFull
     pandoc

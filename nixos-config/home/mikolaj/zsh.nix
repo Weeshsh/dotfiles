@@ -40,6 +40,9 @@
       nx-optimise = "sudo nix store optimise";
       nx-update = "sudo nix flake update --flake ~/nixos-config";
       nx-refresh = "nx-update && nx-rs && nx-cg && nx-optimise";
+
+      docker-clear-all = "docker system prune -a --volumes";
+
     };
 
     history = {

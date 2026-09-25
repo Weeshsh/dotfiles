@@ -12,6 +12,8 @@
     cpplint
     mariadb
 
+    opencode
+
     btop
     gdu
     tree
@@ -26,5 +28,7 @@
     ghostty
 
     texliveFull
+    pandoc
+
   ];
 }

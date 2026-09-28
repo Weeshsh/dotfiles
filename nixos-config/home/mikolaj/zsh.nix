@@ -42,9 +42,14 @@
       nx-refresh = "nx-update && nx-rs && nx-cg && nx-optimise";
 
       docker-clear-all = "docker system prune -a --volumes";
-      mmdc = "/home/mikolaj/.npm-global/bin/mmdc";
-
     };
+
+    sessionVariables = {
+      PATH = "/home/mikolaj/.npm-global/bin:$PATH";
+      PUPPETEER_EXECUTABLE_PATH = "/etc/profiles/per-user/mikolaj/bin/chromium";
+    };
+
+
 
     history = {
       size = 5000;

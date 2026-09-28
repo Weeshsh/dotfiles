@@ -13,6 +13,8 @@
     mariadb
     nix-sweep
 
+    chromium
+
     opencode
 
     btop

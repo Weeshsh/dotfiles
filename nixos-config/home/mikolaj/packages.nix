@@ -27,9 +27,9 @@
     telegram-desktop
     ghostty
     freetube
+    stretchly
 
     texliveFull
     pandoc
-
   ];
 }

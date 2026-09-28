@@ -42,6 +42,7 @@
       nx-refresh = "nx-update && nx-rs && nx-cg && nx-optimise";
 
       docker-clear-all = "docker system prune -a --volumes";
+      mmdc = "/home/mikolaj/.npm-global/bin/mmdc";
 
     };
 

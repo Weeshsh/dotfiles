@@ -22,12 +22,15 @@
   users.users.mikolaj = {
     isNormalUser = true;
     description = "Mikołaj";
+    linger = true;
+
     extraGroups = [
       "dialout"
       "networkmanager"
       "wheel"
       "docker"
     ];
+    
     shell = pkgs.zsh;
   };
 

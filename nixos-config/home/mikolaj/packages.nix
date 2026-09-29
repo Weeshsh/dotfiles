@@ -15,8 +15,6 @@
 
     chromium
 
-    opencode
-
     btop
     tree
     tldr

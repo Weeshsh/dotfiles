@@ -6,6 +6,7 @@
     ./git.nix
     ./zsh.nix
     ./hermes.nix
+    ./stretchly.nix
   ];
 
   home.username = "mikolaj";
@@ -25,6 +26,7 @@
 
   programs.bat.enable = true;
   programs.tmux.enable = true;
+
 
   home.stateVersion = "26.05";
 }

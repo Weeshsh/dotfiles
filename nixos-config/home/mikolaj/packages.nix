@@ -4,15 +4,27 @@
   home.packages = with pkgs; [
     vscode
     micro
-    gnumake
     lsof
     nodejs
-    ruff
-    uv
-    cpplint
     mariadb
     nix-sweep
     gdu
+
+    python313
+    ruff
+		ty
+		uv
+
+    gnumake
+    cpplint
+    stdenv.cc.cc.lib
+    glib
+    gcc
+    cmake
+    boost
+    ninja
+    clang-tools
+
 
     chromium
 

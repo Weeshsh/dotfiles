@@ -6,7 +6,7 @@
     ./git.nix
     ./zsh.nix
     ./hermes.nix
-    ./stretchly.nix
+    # ./stretchly.nix #commented out, doesnt work
   ];
 
   home.username = "mikolaj";

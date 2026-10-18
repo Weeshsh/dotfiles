@@ -12,6 +12,7 @@
     cpplint
     mariadb
     nix-sweep
+    gdu
 
     chromium
 
@@ -20,7 +21,7 @@
     tldr
     diff-so-fancy
 
-    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
+    # inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     spotify
     vesktop
     bitwarden-desktop

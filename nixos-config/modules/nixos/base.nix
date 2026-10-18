@@ -29,6 +29,7 @@
       "networkmanager"
       "wheel"
       "docker"
+      "uucp"
     ];
     
     shell = pkgs.zsh;

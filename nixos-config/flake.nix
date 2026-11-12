@@ -8,10 +8,8 @@
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-
-
-    hermes-agent.url = "github:NousResearch/hermes-agent";
+    
+    # hermes-agent.url = "github:NousResearch/hermes-agent";
 
     # zen-browser = {
     #   url = "github:youwen5/zen-browser-flake";

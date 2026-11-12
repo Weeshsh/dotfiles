@@ -2,7 +2,14 @@
 
 {
   home.packages = with pkgs; [
-    vscode
+    #vscode
+    (vscode.overrideAttrs (old: {
+      # VS Code 1.144 moved ripgrep; remove once nixpkgs uses the new path.
+      postPatch = builtins.replaceStrings
+        [ "@vscode/ripgrep/bin/rg" ]
+        [ "@vscode/ripgrep-universal/bin/linux-x64/rg" ]
+        (old.postPatch or "");
+    }))
     micro
     lsof
     nodejs
@@ -17,14 +24,9 @@
 
     gnumake
     cpplint
-    stdenv.cc.cc.lib
-    glib
-    gcc
-    cmake
-    boost
-    ninja
     clang-tools
 
+    # codex
 
     chromium
 
@@ -40,7 +42,7 @@
     telegram-desktop
     ghostty
     freetube
-    stretchly
+    # stretchly
 
     texliveFull
     pandoc

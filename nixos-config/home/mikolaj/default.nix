@@ -5,7 +5,7 @@
     ./packages.nix
     ./git.nix
     ./zsh.nix
-    ./hermes.nix
+    # ./hermes.nix
     # ./stretchly.nix #commented out, doesnt work
   ];
 

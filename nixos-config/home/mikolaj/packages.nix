@@ -2,14 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    #vscode
-    (vscode.overrideAttrs (old: {
-      # VS Code 1.144 moved ripgrep; remove once nixpkgs uses the new path.
-      postPatch = builtins.replaceStrings
-        [ "@vscode/ripgrep/bin/rg" ]
-        [ "@vscode/ripgrep-universal/bin/linux-x64/rg" ]
-        (old.postPatch or "");
-    }))
+    vscode
     micro
     lsof
     nodejs
@@ -26,7 +19,6 @@
     cpplint
     clang-tools
 
-    # codex
 
     chromium
 
@@ -35,14 +27,12 @@
     tldr
     diff-so-fancy
 
-    # inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     spotify
     vesktop
     bitwarden-desktop
     telegram-desktop
     ghostty
     freetube
-    # stretchly
 
     texliveFull
     pandoc
